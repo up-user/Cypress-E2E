@@ -1,0 +1,16 @@
+{
+    "login":{
+        "username": "test.qa@dispostable.com",
+        "password": "Cypress123!!"
+    },
+    "Product":{
+        "Productname": "Macbook Pro"
+    },
+
+    "Message":{
+        "Successmessage": " Success: You have added MacBook Pro to your shopping cart!"
+
+    }
+
+
+}
