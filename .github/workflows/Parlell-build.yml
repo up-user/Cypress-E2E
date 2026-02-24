@@ -13,6 +13,12 @@ jobs:
         with:
           command: npm run test:addToCart
 
+      - name: Cypress test reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: mochawsome report add to cart
+          path: cypress/reports/html    
+
 
 
   registerPage-run:
@@ -26,3 +32,9 @@ jobs:
         uses: cypress-io/github-action@v7
         with:
           command: npm run test:registerpage
+
+      - name: Cypress test reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: mochawsome report register page
+          path: cypress/reports/html    
