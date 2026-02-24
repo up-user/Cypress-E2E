@@ -15,6 +15,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
+    "test:addToCart": "npx cypress run --spec cypress/e2e/addtocart.cy.js",
+    "test:registerpage": "npx cypress run --spec cypress/e2e/RegisterPage.cy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
