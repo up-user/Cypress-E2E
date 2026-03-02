@@ -2,7 +2,7 @@ export class Registerclass{
 
     //weblocators
     weblocator ={
-         firstname : '#input-firstname',
+         firstname : '#input-firstname1',
          lastname : '#input-lastname',
          email: '#input-email',
          telephone: '#input-telephone',

@@ -10,8 +10,19 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v7
+        with:
+          command : npm run test:registerpage
+
+      - name: Cypress test reports
+        if: always() # Ensure this step runs even if the previous step fails
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-artifact
+          path: cypress/reports/html
 
       - name: Slack Notification
+        if: always() # Ensure this step runs even if the previous step fails
+
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
